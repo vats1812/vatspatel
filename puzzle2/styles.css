@@ -1,0 +1,54 @@
+* {
+    margin:0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: skyblue;
+    display: flex;
+}
+
+.gameContainer {
+    width: 650px;
+    height: 650px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.memoryCard {
+    width: 14%;
+    height: 14%;
+    margin: 8px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.memoryCard:active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease-in-out;
+}
+
+.memoryCard.flip {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.front , .back {
+    background-color: #ff3434;
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    transform: rotateY(180deg);
+}

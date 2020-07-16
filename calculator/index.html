@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Notable&family=Pangolin&display=swap" rel="stylesheet">
+    <script>
+        function validateForm()
+        var x = document.getElementsById('this').value;
+
+        if (isNaN(x)); {
+            alert(" PLEASE ENTER A NUMBER");
+            document.getElementById('disp').focus();
+            return false;
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="this">This is an Online Calculator</div>
+    <form name="form" action="index.html" method="post" onsubmit="return validateForm()">
+
+        <input type="text" name="answer" id="disp" required>
+        <div class="r1">
+            <input type="button" class="all" value="C" onclick="form.answer.value =''">
+            <input type="button" class="clr" value="←" onclick="form.answer.value =form.answer.value.substring(0,form.answer.value.length*1-1) ">
+            <input type="button" class="z" value="00" onclick="form.answer.value +='00'">
+            <input type="button" class="opr" value="/" onclick="form.answer.value +='/'">
+        </div>
+        <div class="r2">
+            <input type="button" class="btnDesign" value="7" onclick="form.answer.value +='7'">
+            <input type="button" class="btnDesign" value="8" onclick="form.answer.value +='8'">
+            <input type="button" class="btnDesign" value="9" onclick="form.answer.value +='9'">
+            <input type="button" class="opr" value="*" onclick="form.answer.value +='*'">
+        </div>
+        <div class="r3">
+            <input type="button" class="btnDesign" value="4" onclick="form.answer.value +='4'">
+            <input type="button" class="btnDesign" value="5" onclick="form.answer.value +='5'">
+            <input type="button" class="btnDesign" value="6" onclick="form.answer.value +='6'">
+            <input type="button" class="opr" value="-" onclick="form.answer.value +='-'">
+        </div>
+        <div class="r4">
+            <input type="button" class="btnDesign" value="1" onclick="form.answer.value +='1'">
+            <input type="button" class="btnDesign" value="2" onclick="form.answer.value +='2'">
+            <input type="button" class="btnDesign" value="3" onclick="form.answer.value +='3'">
+            <input type="button" class="opr" value="+" onclick="form.answer.value +='+'">
+        </div>
+        <div class="r5">
+            <input type="button" class="z" value="0" onclick="form.answer.value +='0'">
+            <input type="button" class="pt" value="." onclick="form.answer.value +='.'">
+            <input type="button" class="eql" value="=" onclick="form.answer.value=eval(form.answer.value) ">
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="preload-transitions">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lobster&family=Montserrat+Subrayada&family=MuseoModerno&family=Notable&family=Pacifico&family=Playfair+Display&family=Roboto&family=Roboto+Slab&family=Ubuntu&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <form action="index.html" method="post" onsubmit="validateForm()">
+        <h1>animated login</h1>
+        <div class="container">
+            <div class="username">
+                <tr class="user">
+                    <input type="checkbox" name="user" id="user">
+                    <label for="user" class="ic">
+                        <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+                    </label>
+                </tr>
+                <tr class="text">
+                    <input type="text" name="username" id="username" placeholder="Your Username Here" oninvalid="this.setCustomValidity('Click on Icon to Enter User Name')" oninput="this.setCustomValidity('')" required>
+                </tr>
+            </div>
+            <div class="pass">
+                <tr class="password">
+                    <input type="checkbox" name="pass" id="pass">
+                    <label for="pass" class="ic">
+                        <i class="fa fa-key fa-2x" aria-hidden="true"></i>
+                    </label>
+                </tr>
+                <tr class="password">
+                    <input type="password" name="pasword" id="password" placeholder="Your Password Here" oninvalid="this.setCustomValidity('Click on Icon to Enter Password')" oninput="this.setCustomValidity('')" required>
+                    <i class="fa fa-eye" aria-hidden="true" onclick="myFunction()" id="eye"></i>
+                </tr>
+            </div>
+            <div class="login">
+                <input type="submit" value="Login Here" id="log"> <label for="log"><i class="fa fa-sign-in"></i></label>
+            </div>
+        </div>
+    </form>
+    <script>
+        function myFunction() {
+            var x = document.getElementById('password');
+            var y = document.getElementById('eye')
+            if (x.type === "password") {
+                x.type = "text";
+                eye.className = 'fa fa-eye-slash';
+            } else {
+                x.type = "password";
+                eye.className = 'fa fa-eye';
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

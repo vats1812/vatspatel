@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lobster&family=Montserrat+Subrayada&family=MuseoModerno&family=Notable&family=Pacifico&family=Playfair+Display&family=Roboto&family=Roboto+Slab&family=Ubuntu&family=Yellowtail&family=Grenze+Gotisch&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <input type="checkbox" name="cont" id="cont">
+        <label for="cont">
+        <div class="panel">
+            <div class="p1">
+        <input type="checkbox" name="wifi" id="wifi" checked>
+        <label for="wifi" >
+            <div class="material-icons icons wifi">wifi </div>
+        </label>
+        <input type="checkbox" name="sound" id="sound">
+        <label for="sound">
+            <div class="material-icons icons sound">volume_up</div>
+        </label>
+        <input type="checkbox" name="sr" id="sr">
+        <label for="sr">
+            <div class="material-icons icons sr">screen_rotation</div>
+        </label>
+        <input type="checkbox" name="data" id="data">
+        <label for="data">
+            <div class="material-icons icons data">swap_vert</div>
+        </label>
+        <input type="checkbox" name="plane" id="plane">
+        <label for="plane">
+            <div class="material-icons icons plane">airplanemode_active</div>
+        </label>
+        <div class="p2">
+            <input type="checkbox" name="bt" id="bt">
+            <label for="bt">
+            <div class="material-icons icons bt">bluetooth</div>
+        </label>
+            <input type="checkbox" name="flash" id="flash">
+            <label for="flash">
+            <div class="material-icons icons flash">highlight</div>
+        </label>
+            <input type="checkbox" name="spot" id="spot">
+            <label for="spot">
+            <div class="material-icons icons spot">rss_feed</div>
+        </label>
+            <input type="checkbox" name="view" id="view" checked>
+            <label for="view">
+            <div class="material-icons icons view">cast_connected</div>
+        </label>
+            <input type="checkbox" name="gps" id="gps" checked>
+            <label for="gps">
+                <div class="material-icons icons gps">location_on</div>
+        </label>
+        </div>
+        <div class="p3">
+
+            <input type="checkbox" name="qr" id="qr">
+            <label for="qr">
+            <div class="material-icons icons qr">qr_code</div>
+        </label>
+            <input type="checkbox" name="nfc" id="nfc">
+            <label for="nfc">
+            <div class="material-icons icons nfc">nfc</div>
+        </label>
+            <input type="checkbox" name="dnd" id="dnd">
+            <label for="dnd">
+        <div class="material-icons icons dnd">remove_circle</div>
+        </label>
+            <input type="checkbox" name="dark" id="dark" checked>
+            <label for="dark">
+    <div class="material-icons icons dark">nights_stay</div>
+        </label>
+        </div>
+        <p class="last">No Simcard</p>
+    </div>
+    </div>
+    </label>
+
+    <label for="cont">
+        <div class="container">
+            <div class="bar">
+                <span class="time">
+                    <div class="hours">00</div>: 
+                    <div class="minutes">00</div>
+                </span>
+                <div class="notificationIcons">
+                    <i class="fa fa-instagram" style="color:rgb(0, 140, 255);"></i>
+                    <i class="material-icons ni" style="color: red;">mail </i>
+                    <i class="material-icons ni" style="color: green;">textsms</i>
+                    <i class="fa fa-facebook-square" style="color:rgb(0, 140, 255);"></i>
+                    <i class="fa fa-snapchat-ghost" style="color:rgb(255, 0, 255);"></i>
+                </div>
+                <div class="networkIcons">
+                    <i class="material-icons vpn" style="color: lightseagreen;">vpn_key</i>
+                    <i class="material-icons cast" style="color: orange;">cast_connected</i>
+                    <i class="material-icons wif" style="color: rgb(185, 178, 178)">wifi</i>
+                    <i class="material-icons arow" style="color: rgb(185, 178, 178);">swap_vert</i>
+                    <i class="material-icons" style="color: gray;">signal_cellular_no_sim</i> 
+                    <span class="per">2%</span>
+                    <i class="material-icons" style="color: orangered;">battery_alert</i>
+                </div>
+            </div>
+        </div>
+    </label>
+    </div>
+    <script>
+        function clock() {
+            const hours = document.querySelector(".hours")
+            const minutes = document.querySelector(".minutes")
+
+            hours.innerHTML = new Date().getHours();
+            minutes.innerHTML = new Date().getMinutes();
+
+            if (hours.innerHTML.toString().length == 1) {
+                hours.innerHTML = "0" + hours.innerHTML;
+            }
+
+            if (minutes.innerHTML.toString().length == 1) {
+                minutes.innerHTML = "0" + minutes.innerHTML;
+            }
+
+
+        }
+
+        const interval = setInterval(clock, 1000)
+    </script>
+</body>
+
+</html>

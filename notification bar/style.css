@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(177, 177, 177);
+    margin-top: 100px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 450px;
+    border-radius: 20px;
+    transform: translateY(-450px);
+    transition: all 1s ease-in-out;
+    z-index: 1;
+}
+
+.icons {
+    margin-bottom: 20px;
+    width: 45px;
+    height: 45px;
+    background: #18191f;
+    font-size: 35px !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+    color: gray;
+    border-radius: 20px;
+    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.25), 3px 3px 5px rgba(255, 255, 255, 0.05);
+    position: relative;
+    top: 50px;
+    left: 10px;
+}
+
+.data {
+    transform: rotateY(180deg);
+    box-shadow: 3px -3px 5px rgba(255, 255, 255, 0.25), -3px 3px 5px rgba(255, 255, 255, 0.05)!important;
+}
+
+.last {
+    width: 400px;
+    background-color: gray;
+    font-family: 'Pacifico';
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    position: relative;
+    top: 165px;
+}
+
+.container {
+    width: 470px;
+    height: 35px;
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    transform: translateY(0px);
+    transition: opacity 1s ease-in-out;
+}
+
+.bar {
+    width: 500px;
+    height: 100px;
+    margin: 5px 10px -5px 10px;
+    margin: 5px 10px -6px 10px;
+    display: flex;
+}
+
+.time {
+    display: flex;
+    color: blanchedalmond;
+    font-family: 'grenze gotisch';
+    font-size: 25px;
+    position: relative;
+    top: -9px;
+    left: 5px;
+}
+
+.notificationIcons,
+.material-icons,
+.fa,
+.networkIcons {
+    position: relative;
+}
+
+.notificationIcons {
+    top: -2px;
+    left: 9px;
+}
+
+.ni {
+    top: 3px;
+}
+
+.fa {
+    font-size: 20px !important;
+    top: -2px;
+}
+
+.networkIcons {
+    left: 100px;
+}
+
+.wif,
+.cast,
+.vpn {
+    left: 15px;
+}
+
+.arow {
+    font-size: 12px !important;
+    position: relative;
+    top: 0px;
+    left: 2px;
+    transform: rotateY(180deg);
+}
+
+.per {
+    color: blanchedalmond;
+    font-family: 'grenze gotisch';
+    font-size: 20px;
+    position: relative;
+    top: -5px;
+    left: 5px;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+#wifi:checked~label .wifi,
+#sound:checked~label .sound,
+#data:checked~label .data,
+#sr:checked~label .sr,
+#plane:checked~label .plane,
+#bt:checked~label .bt,
+#flash:checked~label .flash,
+#spot:checked~label .spot,
+#view:checked~label .view,
+#gps:checked~label .gps,
+#qr:checked~label .qr,
+#nfc:checked~label .nfc,
+#dnd:checked~label .dnd,
+#dark:checked~label .dark {
+    color: white;
+    background-color: blue;
+    text-shadow: white 0px 0px 15px;
+}
+
+#cont:checked~label .panel {
+    transform: translateY(90px);
+}
+
+#cont:checked~label .container {
+    opacity: 0;
+}

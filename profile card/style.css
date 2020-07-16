@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 80px 0px 0px 80px;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.card {
+    width: 360px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 5px gray;
+}
+
+.head {
+    margin-bottom: 15px;
+    margin-top: 1px;
+    font-size: 30px;
+    font-family: 'roboto slab';
+    display: flex;
+    text-align: top;
+}
+
+.fa-user-circle-o {
+    margin-bottom: 25px;
+    color: black !important;
+}
+
+.info {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'ubuntu';
+}
+
+.cont {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+
+.m1 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    background-color: rgba(255, 0, 200, 0.856);
+    transform: translateX(-96%);
+    transition: all 1s ease;
+}
+
+.card:hover>.m1 {
+    transform: translateX(0);
+}
+
+.soc {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.soc a {
+    width: 50px;
+    height: 50px;
+    background: #18191f;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    line-height: 10px;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.25), 2px 2px 5px rgba(255, 255, 255, 0.05);
+}
+
+.fa {
+    color: #555;
+}
+
+.fa-instagram:hover {
+    color: rgb(255, 0, 157);
+    text-shadow: 0px 0px 20px rgb(255, 0, 157);
+    animation: wa 0.8s ease-in-out;
+}
+
+.fa-facebook:hover {
+    color: #1b5ae2;
+    text-shadow: 0px 0px 20px #1b5ae2;
+    animation: wa 0.6s ease-in-out;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+    text-shadow: 0px 0px 20px #00acee;
+    animation: wa 0.6s ease-in-out;
+}
+
+.fa-snapchat-ghost:hover {
+    color: rgb(238, 255, 0);
+    text-shadow: 0px 0px 20px rgb(238, 255, 0);
+    animation: wa 0.6s ease-in-out;
+}
+
+.fa-whatsapp:hover {
+    color: #09ff00;
+    text-shadow: 0px 0px 20px #09ff00;
+    animation: wa 0.6s ease-in-out;
+}
+
+@keyframes wa {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
