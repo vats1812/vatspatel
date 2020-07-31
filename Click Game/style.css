@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+.container h1 {
+    width: 350px;
+    height: 47px;
+    background-color: rgb(255, 0, 0);
+    color: blanchedalmond;
+    border: 3px solid rgb(252, 111, 181);
+    border-radius: 20px;
+    font-size: 30px;
+    font-family: 'roboto slab';
+    font-weight: bolder;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin-bottom: 60px;
+    position: relative;
+    top: 25px;
+    font-size: 28px;
+    text-align: center;
+}
+
+i {
+    margin: 15px;
+}
+
+input[type=button] {
+    width: 140px;
+    font-size: 20px;
+    background-color: hotpink;
+    border: 3px solid rgb(255, 0, 128);
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Rozha One';
+}
+
+input[type=button]:hover {
+    background-color: rgb(0, 255, 255);
+    border: 3px solid rgb(0, 81, 255);
+    cursor: pointer;
+}
+
+.box {
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    border-radius: 20px;
+    transform: translateZ(0px);
+    font-family: 'Rozha One';
+}
+
+.box:hover {
+    box-shadow: gray 0px 0px 20px 5px, gray 0px 0px 20px 5px;
+    transform: translateZ(200px);
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.box1 {
+    z-index: 20;
+}
+
+.box2 {
+    z-index: 19;
+}
+
+.box3 {
+    z-index: 18;
+}
+
+.box4 {
+    z-index: 17;
+}
+
+.box4 .content {
+    margin-bottom: 90px;
+}
+
+.box5 {
+    z-index: 16;
+}
+
+.box6 {
+    z-index: 15;
+}
+
+.box6 .content {
+    margin-bottom: 35px;
+}
+
+.box7 {
+    z-index: 14;
+}
+
+.box8 {
+    z-index: 13;
+}
+
+.box9 {
+    z-index: 12;
+}
+
+select {
+    margin-top: 30px;
+    width: 210px;
+    font-size: 20px;
+    background-color: hotpink;
+    border: 3px solid rgb(255, 0, 128);
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Rozha One';
+}
+
+select:hover {
+    background-color: rgb(0, 255, 255);
+    border: 3px solid rgb(0, 81, 255);
+    cursor: pointer;
+}
+
+#garam {
+    width: 150px;
+}
+
+#yes3,
+#no3 {
+    width: 100px;
+    margin: 20px;
+}
+
+.soc a {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(119, 0, 255);
+    border-radius: 50%;
+    box-shadow: -2px -2px 5px rgba(119, 0, 255, 0.5), 2px 2px 5px rgba(119, 0, 255, 0.5);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+a:hover {
+    transform: translateY(-7px);
+    background-color: rgba(0, 255, 242, 0.582);
+    transition: all .5s ease-in-out;
+}
+
+.fa-instagram {
+    color: rgb(255, 0, 157);
+    text-shadow: 0px 0px 20px rgb(255, 0, 157);
+}
+
+.fa-facebook {
+    color: #1b5ae2;
+    text-shadow: 0px 0px 20px #1b5ae2;
+}
+
+.fa-twitter {
+    color: #00acee;
+    text-shadow: 0px 0px 20px #00acee;
+}
+
+.fa-snapchat-ghost {
+    color: rgb(238, 255, 0);
+    text-shadow: 0px 0px 20px rgb(238, 255, 0);
+}
+
+.fa-whatsapp {
+    color: #09ff00;
+    text-shadow: 0px 0px 20px #09ff00;
+}
+
+#baxa8 {
+    margin-top: 40px;
+}
+
+#hurray {
+    width: 120px;
+}
+
+#box9 a {
+    width: 210px;
+    font-size: 20px;
+    color: black;
+    background-color: hotpink;
+    border: 3px solid rgb(255, 0, 128);
+    border-radius: 20px;
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+    font-family: 'Rozha One';
+    text-decoration: none;
+}
+
+#box9 a:hover {
+    background-color: rgb(0, 255, 255);
+    border: 3px solid rgb(0, 81, 255);
+    cursor: pointer;
+}
