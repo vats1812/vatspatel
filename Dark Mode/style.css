@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+html[data-theme='light'] {
+    --bg: #ffffff;
+    --icon-color: #003cff;
+    --button-bg: #222;
+    --text-color: #ebf5fc;
+    --text: #222;
+}
+
+html[data-theme='dark'] {
+    --bg: #222;
+    --icon-color: #ff0000;
+    --button-bg: #ebf5fc;
+    --text-color: #222;
+    --text: #ffffff;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 350px;
+    background-color: var(--bg);
+    border-radius: 20px;
+    box-shadow: gray 5px 5px 10px 5px, gray -5px -5px 10px 5px;
+}
+
+.mode {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--button-bg);
+    color: var(--text-color);
+}
+
+.button,
+.panel {
+    margin: 0px 0px 100px 0px;
+    padding-top: 90px;
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    color: rgb(58, 58, 58);
+    transition: color 0.5s ease-in-out;
+    background-color: rgb(173, 173, 173);
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 30%;
+    position: relative;
+    left: -3px;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+#wifi:checked~label .wifi,
+#data:checked~label .data,
+#bt:checked~label .bt,
+#spot:checked~label .spot,
+#nfc:checked~label .nfc,
+#flash:checked~label .flash,
+#sim:checked~label .sim,
+#bed:checked~label .bed,
+#gps:checked~label .gps,
+#otg:checked~label .otg,
+#plane:checked~label .plane,
+#sr:checked~label .sr {
+    color: white;
+    background-color: var(--icon-color);
+    /* text-shadow: white 0px 0px 15px; */
+    transition: all 0.5s ease-in-out;
+}
+
+.p1,
+.p2,
+.p3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    margin: 0px 5px 10px 5px;
+    color: var(--text);
+    font-size: 11px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
