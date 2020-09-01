@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    position: absolute;
+    top: 1px;
+}
+
+.phonebody {
+    width: 267px;
+    height: 567px;
+    background-color: black;
+    border: black 10px solid;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.powerbutton {
+    width: 5px;
+    height: 35px;
+    top: 205px;
+    left: 257px;
+    border: 1px solid whitesmoke;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: black;
+    position: absolute;
+}
+
+.volumebutton {
+    width: 5px;
+    height: 80px;
+    top: 100px;
+    left: 257px;
+    border: 1px solid whitesmoke;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: black;
+    position: absolute;
+}
+
+.lockscreen {
+    width: 248px;
+    height: 547px;
+    background: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 2;
+}
+
+.lockdetails {
+    position: relative;
+    top: 100px;
+}
+
+.time {
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: 'roboto';
+    position: relative;
+    top: -38px;
+    left: 10px;
+}
+
+.date {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'roboto';
+    position: relative;
+    top: -42px;
+    left: 13px;
+}
+
+.lock {
+    color: whitesmoke;
+    position: relative;
+    top: 254px;
+    left: -3px;
+    text-align: center;
+}
+
+.fingerprint {
+    height: 55px;
+    width: 55px;
+    margin-top: 20px;
+    border-radius: 50%;
+    font-size: 43px !important;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.phone-camera {
+    position: relative;
+    top: 258px;
+    left: 10px;
+}
+
+.phone {
+    height: 30px;
+    width: 30px;
+    color: #00d4ff;
+    background-color: rgba(0, 0, 0, 0.755);
+    border-radius: 11px;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.camera {
+    height: 30px;
+    width: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 0, 0, 0.755);
+    border-radius: 11px;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 163px;
+}
+
+#finger:focus~.fingerprint {
+    animation: touch 1s ease-in-out;
+}
+
+@keyframes touch {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: rgba(128, 255, 0, 0.755);
+    }
+}
+
+.homescreen {
+    width: 248px;
+    height: 547px;
+    background: url(homebackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    border-radius: 20px;
+    z-index: 1;
+    position: absolute;
+}
+
+.lockicon {
+    position: relative;
+    top: 360px;
+    left: 190px;
+    text-align: center;
+}
+
+.uil {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: hotpink;
+    background-color: black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
