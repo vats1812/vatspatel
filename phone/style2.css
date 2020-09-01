@@ -31,8 +31,8 @@ body {
 
 .icons {
     margin-bottom: 20px;
-    width: 22px;
-    height: 22px;
+    width: 17px;
+    height: 17px;
     background: #18191f;
     font-size: 100% !important;
     display: inline-flex !important;
@@ -78,16 +78,7 @@ body {
     transition: opacity 1s ease-in-out;
 }
 
-.bar {
-    width: 500px;
-    height: 100px;
-    margin: 5px 10px -6px 10px;
-    display: -webkit-box;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    right: 100px;
-}
+
 
 .time2 {
     display: flex;
