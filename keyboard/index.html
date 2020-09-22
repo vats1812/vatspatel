@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form name="doc" method="post">
+        <div class="container">
+            <div class="main">
+                <div class="input">
+                    <textarea name="inp" id="inp"></textarea>
+                </div>
+                <div class="keyboard">
+
+                    <div class="row row1">
+
+                        <input type="button" value="1" name="num1" onclick="disp(num1.value)">
+                        <input type="button" value="2" name="num2" onclick="disp(num2.value)">
+                        <input type="button" value="3" name="num3" onclick="disp(num3.value)">
+                        <input type="button" value="4" name="num4" onclick="disp(num4.value)">
+                        <input type="button" value="5" name="num5" onclick="disp(num5.value)">
+                        <input type="button" value="6" name="num6" onclick="disp(num6.value)">
+                        <input type="button" value="7" name="num7" onclick="disp(num7.value)">
+                        <input type="button" value="8" name="num8" onclick="disp(num8.value)">
+                        <input type="button" value="9" name="num9" onclick="disp(num9.value)">
+                        <input type="button" value="0" name="num0" onclick="disp(num0.value)">
+                        <input type="button" value="Backspace" name="back" id="back" onclick="doc.inp.value =doc.inp.value.substring(0,doc.inp.value.length*1-1)">
+
+                    </div>
+
+
+                    <div class="row row2">
+
+                        <input type="button" value="Q" name="q" id="q" onclick="disp(q.value, caps(z.value))">
+                        <input type="button" value="W" name="w" id="w" onclick="disp(w.value)">
+                        <input type="button" value="E" name="e" id="e" onclick="disp(e.value)">
+                        <input type="button" value="R" name="r" id="r" onclick="disp(r.value)">
+                        <input type="button" value="T" name="t" id="t" onclick="disp(t.value)">
+                        <input type="button" value="Y" name="y" id="y" onclick="disp(y.value)">
+                        <input type="button" value="U" name="u" id="u" onclick="disp(u.value)">
+                        <input type="button" value="I" name="i" id="i" onclick="disp(i.value)">
+                        <input type="button" value="O" name="o" id="o" onclick="disp(o.value)">
+                        <input type="button" value="P" name="p" id="p" onclick="disp(p.value)">
+
+                    </div>
+
+
+                    <div class="row row3">
+
+                        <input type="button" value="A" name="a" id="a" onclick="disp(a.value)">
+                        <input type="button" value="S" name="s" id="s" onclick="disp(s.value)">
+                        <input type="button" value="D" name="d" id="d" onclick="disp(d.value)">
+                        <input type="button" value="F" name="f" id="f" onclick="disp(f.value)">
+                        <input type="button" value="G" name="g" id="g" onclick="disp(g.value)">
+                        <input type="button" value="H" name="h" id="h" onclick="disp(h.value)">
+                        <input type="button" value="J" name="j" id="j" onclick="disp(j.value)">
+                        <input type="button" value="K" name="k" id="k" onclick="disp(k.value)">
+                        <input type="button" value="L" name="l" id="l" onclick="disp(l.value)">
+
+                    </div>
+
+
+                    <div class="row row4">
+
+                        <input type="button" value="Shift" id="shift" onclick="caps()">
+                        <input type="button" value="Z" name="z" id="z" onclick="disp(z.value)">
+                        <input type="button" value="X" name="x" id="x" onclick="disp(x.value)">
+                        <input type="button" value="C" name="c" id="c" onclick="disp(c.value)">
+                        <input type="button" value="V" name="v" id="v" onclick="disp(v.value)">
+                        <input type="button" value="B" name="b" id="b" onclick="disp(b.value)">
+                        <input type="button" value="N" name="n" id="n" onclick="disp(n.value)">
+                        <input type="button" value="M" name="m" id="m" onclick="disp(m.value)">
+
+                    </div>
+                    <div class="row spacebar">
+                        <input type="button" value="Emoji" id="emoji" onclick="emotes()">
+                        <input type="button" value="Space" id="space">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+<script src="index.js"></script>
+
+</html>
