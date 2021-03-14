@@ -14,7 +14,7 @@
     justify-content: center;
 }
 
-.out_circ {
+.smile {
     margin: auto;
     width: 30vw;
     height: 30vw;
@@ -46,6 +46,35 @@
 .eye2 {
     top: -7vw;
     left: 16vw;
+}
+
+.white {
+    width: 1vw;
+    height: 2vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: relative;
+    top: 1vw;
+    left: 0vw;
+    animation: eyes 2s infinite;
+}
+
+@keyframes eyes {
+    0% {
+        left: 0vw;
+    }
+    25% {
+        left: 2vw;
+    }
+    50% {
+        left: 0vw;
+    }
+    75% {
+        left: 2vw;
+    }
+    100% {
+        left: 0vw;
+    }
 }
 
 .nose {
