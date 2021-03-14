@@ -13,10 +13,13 @@
 
 <body>
     <div class="container">
+
         <div class="button">
-            <input type="button" value="PRESS ME">
+            <input type="button" value="GOOD ME" class="b_good" onclick="good()">
+            <input type="button" value="DEVIL ME" class="b_devil" onclick="devil()">
         </div>
-        <div class="smile">
+
+        <div class="smile" id="good">
             <div class="eye1">
                 <div class="white c1"></div>
             </div>
@@ -26,7 +29,8 @@
             <div class="nose"></div>
             <div class="lip"></div>
         </div>
-        <div class="devil">
+
+        <div class="devil" id="devil">
             <div class="eye3">
                 <div class="brow1"></div>
                 <div class="black"></div>
@@ -40,5 +44,6 @@
     </div>
 
 </body>
+<script src="index.js"></script>
 
 </html>
