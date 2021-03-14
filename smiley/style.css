@@ -25,12 +25,22 @@
 input[type=button] {
     width: 15vw;
     height: 7vh;
+    margin: 0vw 10vw 0vw 10vw;
     border: none;
     font-family: 'Courier New', Courier, monospace;
     font-size: 2.5vw;
     font-weight: bolder;
-    background-color: crimson;
-    color: cyan;
+    cursor: pointer;
+}
+
+.b_good {
+    background-color: yellow;
+    color: red;
+}
+
+.b_devil {
+    background-color: darkmagenta;
+    color: red;
 }
 
 input[type=button]:hover,
