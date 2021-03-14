@@ -1,14 +1,22 @@
 .devil {
     margin: auto;
+    top: 0;
+    left: 0;
+    /* display: flex; */
+    display: none;
+    position: relative;
+    align-items: center;
+}
+
+.devil_inner {
     width: 30vw;
     height: 30vw;
     background-color: darkmagenta;
     border-radius: 50vw;
     border: rgb(255, 0, 0) solid 1.2vmin;
     top: 0;
-    left: 0;
+    left: -7vw;
     display: flex;
-    display: none;
     position: relative;
     align-items: center;
 }
@@ -92,4 +100,35 @@
     align-items: center;
     top: 5vw;
     left: -5vw;
+}
+
+.ear {
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    top: -20vw;
+    left: 7vw;
+}
+
+.ear1,
+.ear2 {
+    width: 14vw;
+    height: 5vw;
+    background-color: darkmagenta;
+    border: rgb(255, 0, 0) solid 1.2vmin;
+    border-bottom-left-radius: 50vmin;
+    border-bottom-right-radius: 50vmin;
+    position: relative;
+}
+
+.ear1 {
+    top: 12vw;
+    left: -1vw;
+    transform: rotateZ(40deg);
+}
+
+.ear2 {
+    top: 7vw;
+    left: 17vw;
+    transform: rotateZ(-40deg);
 }
