@@ -1,0 +1,85 @@
+.smile {
+    margin: auto;
+    width: 30vw;
+    height: 30vw;
+    background-color: yellow;
+    border-radius: 50vw;
+    border: rgb(255, 0, 0) solid 1.2vmin;
+    top: 0;
+    left: 0;
+    display: flex;
+    display: none;
+    position: relative;
+    align-items: center;
+}
+
+.eye1,
+.eye2 {
+    width: 3vw;
+    height: 4vw;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: relative;
+    align-items: center;
+}
+
+.eye1 {
+    top: -7vw;
+    left: 7vw;
+}
+
+.eye2 {
+    top: -7vw;
+    left: 16vw;
+}
+
+.white {
+    width: 1vw;
+    height: 2vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: relative;
+    top: 1vw;
+    left: 0vw;
+    animation: smile 2s infinite;
+}
+
+@keyframes smile {
+    0% {
+        left: 0vw;
+    }
+    25% {
+        left: 2vw;
+    }
+    50% {
+        left: 0vw;
+    }
+    75% {
+        left: 2vw;
+    }
+    100% {
+        left: 0vw;
+    }
+}
+
+.nose {
+    width: 1vw;
+    height: 4vw;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    align-items: center;
+    left: 8vw;
+    top: 1vw;
+}
+
+.lip {
+    width: 18vw;
+    height: 12vw;
+    border-bottom: black solid 2vmin;
+    border-bottom-left-radius: 50vmin;
+    border-bottom-right-radius: 50vmin;
+    position: relative;
+    align-items: center;
+    top: 5vw;
+    left: -1.5vw;
+}
