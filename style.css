@@ -10,8 +10,22 @@ html {
     left: 0;
     top: 0;
     position: absolute;
+<<<<<<< HEAD
 }
 
+=======
+    background: url("images/wallpaper.jpg");
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-position-x: center;
+}
+
+.background {
+    position: relative;
+    background-color: rgba(0, 183, 255, 0.459);
+}
+
+>>>>>>> 466e09e991424cd3ddf210a898edac85b86ce845
 .navbar {
     position: absolute;
 }
@@ -42,7 +56,11 @@ html {
 
 .title-text {
     font-size: 9.5vmin;
+<<<<<<< HEAD
     font-family: "play";
+=======
+    font-family: 'play';
+>>>>>>> 466e09e991424cd3ddf210a898edac85b86ce845
     position: relative;
     justify-content: center;
     align-items: center;
@@ -114,6 +132,7 @@ li {
     list-style: none;
     padding: 0;
     margin: 0;
+<<<<<<< HEAD
 }
 
 .menu {
@@ -167,3 +186,59 @@ button:hover {
 a:hover {
     color: white !important;
 }
+=======
+}
+
+.menu {
+    position: relative;
+    top: 10vh;
+}
+
+.menu li {
+    color: white;
+    border-bottom: 5vh solid transparent;
+}
+
+.menu li a {
+    font-family: 'notable';
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.nav {
+    width: 40vmin;
+    border: none;
+    border-radius: 2.5vh;
+}
+
+#ham:checked~label span:nth-child(1) {
+    margin: 1vh 0vw 0vh 0vw;
+    transform: rotate(-45deg);
+}
+
+#ham:checked~label span:nth-child(2) {
+    margin: 0vh 0vw 0vh 0.2vw;
+    transform: rotate(45deg);
+}
+
+#ham:checked~label span:nth-child(3) {
+    opacity: 0;
+}
+
+#ham:checked~#sideMenu {
+    visibility: visible;
+    transition: all 0.4s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: white !important;
+}
+
+>>>>>>> 466e09e991424cd3ddf210a898edac85b86ce845
