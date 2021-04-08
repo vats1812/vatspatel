@@ -1,174 +1,84 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.container {
-    left: 0;
-    top: 0;
-    position: absolute;
-}
-
-.background {
-    position: relative;
-    background-color: rgba(0, 183, 255, 0.459);
-}
-
-.navbar {
-    position: absolute;
-}
-
-#sideMenu {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background-color: rgba(137, 103, 138, 0.582);
-    visibility: hidden;
-    align-items: center;
-    text-align: center;
-    transition: all 0.2s ease-in-out;
-    z-index: 20;
-}
-
-.title {
-    width: 100vw;
-    height: 10vh;
-    left: 0;
-    top: 0;
-    position: fixed;
-    background-color: rgba(255, 0, 212, 0.747);
-    z-index: 18;
-}
-
-.title-text {
-    color: black;
-    font-size: 9.5vmin;
+.footer {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.95);
     font-family: 'josefin sans';
+    font-size: 25px;
+    font-weight: bold;
+    color: #da1b60;
     position: relative;
+    text-align: center;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    position: relative;
+    font-size: small;
+    text-decoration: underline;
+    bottom: .05vw;
+}
+
+.soc {
+    width: 45vw;
+    height: 15vh;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     text-align: center;
 }
 
-input {
-    width: 10vw;
-    height: 10vh;
-    position: relative;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 2;
-}
-
-.open {
-    width: 2vw;
-    height: 3vh;
+.soc a {
+    margin-left: 1.5vw;
     display: flex;
-    position: fixed;
-    z-index: 21;
-    top: 4vh;
-    left: 2vw;
-    cursor: pointer;
-}
-
-.open span:nth-child(1) {
-    width: 2vw;
-    height: 0.7vh;
-    left: 0vw;
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    border-radius: 2vmin;
-    top: 0vh;
-    transform: rotate(0deg);
-    transition: all 0.4s ease-in-out;
-    cursor: pointer;
-}
-
-.open span:nth-child(2) {
-    width: 2vw;
-    height: 0.7vh;
-    position: absolute;
-    left: 0vw;
-    background-color: rgb(0, 0, 0);
-    border-radius: 2vmin;
-    top: 1vh;
-    transform: rotate(0deg);
-    transition: all 0.4s ease-in-out;
-    z-index: 1;
-    cursor: pointer;
-}
-
-.open span:nth-child(3) {
-    width: 2vw;
-    height: 0.7vh;
-    left: 0vw;
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    border-radius: 2vmin;
-    top: 2vh;
-    transform: rotate(0deg);
-    transition: all 0.4s ease-in-out;
-    cursor: pointer;
-}
-
-li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu {
-    position: relative;
-    top: 10vh;
-}
-
-.menu li {
-    color: white;
-    border-bottom: 5vh solid transparent;
-}
-
-.menu li a {
-    font-family: 'notable';
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    color: black;
-    display: block;
-    text-transform: uppercase;
-    padding: 20px;
 }
 
-.nav {
-    width: 40vmin;
-    border: none;
-    border-radius: 2.5vh;
+.fa {
+    color: #555;
 }
 
-#ham:checked~label span:nth-child(1) {
-    margin: 1vh 0vw 0vh 0vw;
-    transform: rotate(-45deg);
+.fa-instagram:hover {
+    color: rgb(255, 0, 157);
+    text-shadow: 0px 0px 20px rgb(255, 0, 157);
+    animation: wa 0.8s ease-in-out;
 }
 
-#ham:checked~label span:nth-child(2) {
-    margin: 0vh 0vw 0vh 0.2vw;
-    transform: rotate(45deg);
+.fa-facebook:hover {
+    color: #1b5ae2;
+    text-shadow: 0px 0px 20px #1b5ae2;
+    animation: wa 0.6s ease-in-out;
 }
 
-#ham:checked~label span:nth-child(3) {
-    opacity: 0;
+.fa-twitter:hover {
+    color: #00acee;
+    text-shadow: 0px 0px 20px #00acee;
+    animation: wa 0.6s ease-in-out;
 }
 
-#ham:checked~#sideMenu {
-    visibility: visible;
-    transition: all 0.4s ease-in-out;
+.fa-snapchat-ghost:hover {
+    color: rgb(238, 255, 0);
+    text-shadow: 0px 0px 20px rgb(238, 255, 0);
+    animation: wa 0.6s ease-in-out;
 }
 
-button:hover {
-    background-color: rgb(0, 0, 0);
+.fa-whatsapp:hover {
+    color: #09ff00;
+    text-shadow: 0px 0px 20px #09ff00;
+    animation: wa 0.6s ease-in-out;
+}
+
+@keyframes wa {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 a:hover {
-    color: white !important;
+    cursor: pointer;
 }
