@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIC TAC TOE</title>
+    <link rel="shortcut icon" href="../img/logo5.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/game.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-title">
+            <a href="../index.html">
+                <img class="ttlimg" src="../img/title.png" alt="titleimg" /> &nbsp; TIC TAC TOE GAME
+            </a>
+        </div>
+        <div class="theme" id="theme">
+            Tap Me ! &nbsp;
+            <div id="modeimg">
+                <img src="../img/dark.png" alt="light" />
+            </div>
+        </div>
+    </div>
+    <div class="gamecont">
+        <div class="container">
+            <div class="daba bdr-top bdr-left">
+                <span class="text"></span>
+            </div>
+            <div class="daba bdr-top">
+                <span class="text"></span>
+            </div>
+            <div class="daba bdr-top bdr-right">
+                <span class="text"></span>
+            </div>
+            <div class="daba bdr-left">
+                <span class="text"></span>
+            </div>
+            <div class="daba">
+                <span class="text"></span>
+            </div>
+            <div class="daba bdr-right">
+                <span class="text"></span>
+            </div>
+            <div class="daba bdr-bottom bdr-left">
+                <span class="text"></span>
+            </div>
+            <div class="daba bdr-bottom">
+                <span class="text"></span>
+            </div>
+            <div class="daba bdr-bottom bdr-right">
+                <span class="text"></span>
+            </div>
+        </div>
+        <div class="gameInfo">
+            <h1>Game Info</h1>
+            <div>
+                <div class="info">Player &nbsp;<img src="../img/x.png" alt="X" />'s &nbsp;Turn</div>
+            </div>
+        </div>
+    </div>
+    <div class="playagain">
+        <div class="info-2" style="color: var(--txt-clr);"></div>
+        <button onclick="playagain()">Play Again</button>
+    </div>
+</body>
+<script src="js/mode.js "></script>
+<script src="js/game.js "></script>
+
+</html>

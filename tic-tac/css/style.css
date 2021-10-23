@@ -1,0 +1,27 @@
+html[data-theme="light"] {
+    --txt-clr: #000000;
+    --bck-color: #FFFFFF;
+    --ttl-bck: #e0f0ff;
+    --bdr-clr: #2a98ff;
+    --bx-hvr: #F2EAFA;
+    --btn-clr: #d60032;
+}
+
+html[data-theme="dark"] {
+    --txt-clr: #FFFFFF;
+    --bck-color: #000000;
+    --ttl-bck: #66b3fa;
+    --bdr-clr: #b6dcff;
+    --bx-hvr: #494949;
+    --btn-clr: #FF013C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bck-color);
+}

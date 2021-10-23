@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+.gamecont {
+    display: flex;
+    justify-content: left;
+    margin: 100px 0 0 150px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.daba {
+    border: 5px solid var(--bdr-clr);
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.daba:hover {
+    background-color: var(--bx-hvr);
+}
+
+.text img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    height: 5vw;
+}
+
+.gameInfo {
+    position: relative;
+    top: 0;
+    margin-left: 100px;
+    padding: 0 34px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: var(--txt-clr);
+}
+
+.info img {
+    position: relative;
+    top: 10px;
+    width: 2vw;
+    height: 2vw;
+}
+
+.info-2 {
+    font-family: 'Baloo Bhaina 2', cursive;
+    position: relative;
+    top: -130px;
+    left: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-2>img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -3px;
+    width: 2vw;
+    height: 2vw;
+}
+
+.gameInfo h1 {
+    font-size: 2.5rem;
+}
+
+.bdr-top {
+    border-top: 0;
+}
+
+.bdr-bottom {
+    border-bottom: 0;
+}
+
+.bdr-left {
+    border-left: 0;
+}
+
+.bdr-right {
+    border-right: 0;
+}
+
+@media screen and (max-width: 950px) {
+    .gamecont {
+        padding-top: 100px;
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: center;
+        text-align: center;
+    }
+    .container {
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+    .daba {
+        border: 2px solid var(--bdr-clr);
+    }
+    .text img {
+        width: 10vw;
+        height: 10vw;
+    }
+    .bdr-top {
+        border-top: 0;
+    }
+    .bdr-bottom {
+        border-bottom: 0;
+    }
+    .bdr-left {
+        border-left: 0;
+    }
+    .bdr-right {
+        border-right: 0;
+    }
+    .gameInfo {
+        margin-top: 34px;
+        margin-left: 0;
+    }
+    .gameInfo h1 {
+        font-size: 1.5rem;
+    }
+    .info img {
+        position: relative;
+        top: 5px;
+        width: 5vw;
+        height: 5vw;
+    }
+    .info-2 {
+        font-size: x-large;
+    }
+    .info-2 img {
+        position: relative;
+        width: 10vw;
+        height: 10vw;
+    }
+    .playagain {
+        position: relative;
+        left: -53px;
+    }
+}
+
+.playagain {
+    height: 90vh;
+    position: relative;
+    left: -55px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: var(--txt-color);
+}
+
+button,
+button::after {
+    width: 180px;
+    height: 86px;
+    font-size: 36px;
+    font-family: 'Bebas Neue', cursive;
+    background: linear-gradient(45deg, transparent 5%, var(--btn-clr) 5%);
+    border: 0;
+    color: var(--txt-clr);
+    letter-spacing: 3px;
+    line-height: 88px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: 'AVAILABLE NOW';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+}
+
+button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+    0% {
+        clip-path: var(--slice-1);
+        transform: translate(-20px, -10px);
+    }
+    10% {
+        clip-path: var(--slice-3);
+        transform: translate(10px, 10px);
+    }
+    20% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 10px);
+    }
+    30% {
+        clip-path: var(--slice-3);
+        transform: translate(0px, 5px);
+    }
+    40% {
+        clip-path: var(--slice-2);
+        transform: translate(-5px, 0px);
+    }
+    50% {
+        clip-path: var(--slice-3);
+        transform: translate(5px, 0px);
+    }
+    60% {
+        clip-path: var(--slice-4);
+        transform: translate(5px, 10px);
+    }
+    70% {
+        clip-path: var(--slice-2);
+        transform: translate(-10px, 10px);
+    }
+    80% {
+        clip-path: var(--slice-5);
+        transform: translate(20px, -10px);
+    }
+    90% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 0px);
+    }
+    100% {
+        clip-path: var(--slice-1);
+        transform: translate(0);
+    }
+}

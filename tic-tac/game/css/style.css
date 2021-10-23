@@ -1,0 +1,63 @@
+html[data-theme="light"] {
+    --txt-clr: #000000;
+    --bck-color: #FFFFFF;
+    --ttl-bck: #e0f0ff;
+    --bdr-clr: #2a98ff;
+    --bx-hvr: #F2EAFA;
+    --btn-clr: #d60032;
+}
+
+html[data-theme="dark"] {
+    --txt-clr: #FFFFFF;
+    --bck-color: #000000;
+    --ttl-bck: #66b3fa;
+    --bdr-clr: #b6dcff;
+    --bx-hvr: #494949;
+    --btn-clr: #FF013C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bck-color);
+}
+
+@media screen and (max-width: 950px) {
+    .gamecont {
+        padding-top: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+    }
+    .container {
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+    .daba {
+        border: 2px solid var(--bdr-clr);
+    }
+    .text img {
+        width: 10vw;
+        height: 10vw;
+    }
+    .bdr-top {
+        border-top: 0;
+    }
+    .bdr-bottom {
+        border-bottom: 0;
+    }
+    .bdr-left {
+        border-left: 0;
+    }
+    .bdr-right {
+        border-right: 0;
+    }
+    .loader img {
+        width: 20vw;
+        height: 20vw;
+    }
+}
