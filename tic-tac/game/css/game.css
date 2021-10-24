@@ -135,6 +135,7 @@
         height: 5vw;
     }
     .info-2 {
+        left: 33.8%;
         font-size: x-large;
     }
     .info-2 img {
@@ -143,8 +144,11 @@
         height: 10vw;
     }
     .playagain {
-        position: relative;
         left: -53px;
+    }
+    .playagain button,
+    .playagain button::after {
+        left: -36px;
     }
 }
 
