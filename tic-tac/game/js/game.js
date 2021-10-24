@@ -1,4 +1,6 @@
 let isgameover = false;
+let isgamewin = false;
+let isgamedraw = false;
 let turn = '<img src="../img/x.png" alt="X">'
 
 const changeTurn = () => {
@@ -12,6 +14,7 @@ if (isgameover = false) {
 
 const checkWin = () => {
     let text = document.getElementsByClassName('text');
+    let draw = document.querySelectorAll(".text");
     let wins = [
         [0, 1, 2],
         [3, 4, 5],
@@ -25,11 +28,20 @@ const checkWin = () => {
     wins.forEach(e => {
         if ((text[e[0]].innerHTML === text[e[1]].innerHTML) && (text[e[2]].innerHTML === text[e[1]].innerHTML) && (text[e[0]].innerHTML !== "")) {
             document.querySelector('.info-2').innerHTML = "Player &nbsp;" + text[e[0]].innerHTML + " &nbsp; Won";
+            isgamewin = true;
+            isgameover = true;
+        } else if (draw[0].innerHTML !== "" && draw[1].innerHTML !== "" && draw[2].innerHTML !== "" && draw[3].innerHTML !== "" && draw[4].innerHTML !== "" && draw[5].innerHTML !== "" && draw[6].innerHTML !== "" && draw[7].innerHTML !== "" && draw[8].innerHTML !== "") {
+            document.querySelector('.info-2').innerHTML = "Match Draw";
+            isgamedraw = true;
             isgameover = true;
         }
+        if (isgamewin == true && isgamedraw == true) {
+            isgamewin = true;
+            isgamedraw = false;
+        }
     })
-
 }
+
 let dabas = document.getElementsByClassName("daba");
 Array.from(dabas).forEach(element => {
     let text = element.querySelector('.text');
