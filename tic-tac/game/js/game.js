@@ -7,12 +7,7 @@ const changeTurn = () => {
     return turn === '<img src="../img/x.png" alt="X">' ? '<img src="../img/o.png" alt="O">' : '<img src="../img/x.png" alt="X">'
 }
 
-if (isgameover = false) {
-    document.querySelector('.gamecont').style.display = "flex";
-    document.querySelector('.playagain').style.display = "none";
-}
-
-const checkWin = () => {
+let checkWin = () => {
     let text = document.getElementsByClassName('text');
     let draw = document.querySelectorAll(".text");
     let wins = [
@@ -27,19 +22,28 @@ const checkWin = () => {
     ]
     wins.forEach(e => {
         if ((text[e[0]].innerHTML === text[e[1]].innerHTML) && (text[e[2]].innerHTML === text[e[1]].innerHTML) && (text[e[0]].innerHTML !== "")) {
-            document.querySelector('.info-2').innerHTML = "Player &nbsp;" + text[e[0]].innerHTML + " &nbsp; Won";
             isgamewin = true;
+            document.querySelector('.info-2').innerHTML = "Player &nbsp;" + text[e[0]].innerHTML + " &nbsp; Won";
             isgameover = true;
-        } else if (draw[0].innerHTML !== "" && draw[1].innerHTML !== "" && draw[2].innerHTML !== "" && draw[3].innerHTML !== "" && draw[4].innerHTML !== "" && draw[5].innerHTML !== "" && draw[6].innerHTML !== "" && draw[7].innerHTML !== "" && draw[8].innerHTML !== "") {
-            document.querySelector('.info-2').innerHTML = "Match Draw";
+        }
+        if (draw[0].innerHTML !== "" && draw[1].innerHTML !== "" && draw[2].innerHTML !== "" && draw[3].innerHTML !== "" && draw[4].innerHTML !== "" && draw[5].innerHTML !== "" && draw[6].innerHTML !== "" && draw[7].innerHTML !== "" && draw[8].innerHTML !== "") {
             isgamedraw = true;
             isgameover = true;
         }
-        if (isgamewin == true && isgamedraw == true) {
+        if (isgamewin === true && isgamedraw === true) {
             isgamewin = true;
             isgamedraw = false;
         }
+        if (isgamedraw === true && isgamewin === false) {
+            isgamedraw = true;
+            isgamewin = false;
+            document.querySelector('.info-2').innerHTML = "Match Draw";
+        }
+
     })
+}
+let checkDraw = () => {
+
 }
 
 let dabas = document.getElementsByClassName("daba");
