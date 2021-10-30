@@ -11,8 +11,6 @@ for (let i = 0; i < countries.length; i++) {
     }
 }
 
-let firstInp1 = document.getElementById("firstInp");
-
 window.addEventListener("load", () => {
     getExchangeRate();
 })
@@ -28,6 +26,7 @@ function getExchangeRate() {
         secondAmt.value = (firstAmt.value * exchangeRate).toFixed(4);
     })
 }
+
 firstCurrency.addEventListener("change", getExchangeRate);
 firstAmt.addEventListener("input", getExchangeRate);
 secondCurrency.addEventListener("change", getExchangeRate);
