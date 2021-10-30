@@ -3,6 +3,8 @@ let firstCurrency = document.querySelector(".firstCurrency select");
 let secondCurrency = document.querySelector(".secondCurrency select");
 let firstAmt = document.getElementById("firstInp");
 let secondAmt = document.getElementById("secondInp");
+let swap = document.getElementById("swap");
+
 for (let i = 0; i < countries.length; i++) {
     for (let currencies in country_list) {
         let selected = i == 0 ? currencies == "INR" ? "selected" : "" : currencies == "USD" ? "selected" : "";
@@ -31,3 +33,10 @@ firstCurrency.addEventListener("change", getExchangeRate);
 firstAmt.addEventListener("input", getExchangeRate);
 secondCurrency.addEventListener("change", getExchangeRate);
 secondAmt.addEventListener("input", getExchangeRate);
+
+swap.addEventListener('click', () => {
+    const temp = firstCurrency.value;
+    firstCurrency.value = secondCurrency.value;
+    secondCurrency.value = temp;
+    getExchangeRate();
+});
