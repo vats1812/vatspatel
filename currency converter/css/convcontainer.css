@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+.convcontainer {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.firstCurrency,
+.secondCurrency,
+.currimg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inpcurrency {
+    width: 20%;
+    height: 60px;
+    margin: 0;
+    color: white;
+    background-color: transparent;
+    font-size: large;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: bolder;
+    border: 0;
+    border-bottom: 2px solid #ff00b3;
+    outline: 0;
+    text-align: center;
+}
+
+.inpcurrency::placeholder {
+    font-weight: bolder;
+    background-color: transparent;
+    position: relative;
+    top: 15px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.inpcurrency:focus {
+    color: #ff00b3;
+    font-weight: bolder;
+}
+
+.inpcurrency:focus::placeholder {
+    position: relative;
+    top: -25px;
+    font-size: x-small;
+    color: #ff00b3;
+    font-weight: bolder;
+}
+
+select {
+    position: relative;
+    top: 25%;
+    width: 5%;
+    height: 50%;
+    text-align: center;
+    color: white;
+    margin-left: 2%;
+    background-color: black;
+    font-size: large;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: bolder;
+    border: 0;
+    border-bottom: 2px solid #ff00b3;
+    outline: 0;
+    text-align: center;
+}
+
+select option {
+    color: #ff00b3;
+    background-color: black;
+    font-size: large;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: bolder;
+    border: 0;
+    outline: 0;
+    text-align: center;
+}
+
+.currimg img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7vh;
+    height: 7vh;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    animation: rotate 2.5s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotateX(180deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    75% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .inpcurrency {
+        width: 50%;
+    }
+    select {
+        width: 20%;
+        height: 50%;
+        margin-left: 5%;
+    }
+    .currimg img {
+        width: 7vh;
+        height: 7vh;
+    }
+}
