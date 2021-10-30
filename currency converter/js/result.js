@@ -21,7 +21,7 @@ function getExchangeRate() {
     let first_Currency = firstCurrency.value;
     let second_Currency = secondCurrency.value;
 
-    let url = `https://v6.exchangerate-api.com/v6/d3feef4060f6a49448859dc0/latest/${first_Currency}`;
+    let url = `https://v6.exchangerate-api.com/v6/af91d6f101954c2637c3eadf/latest/${first_Currency}`;
 
     fetch(url).then(res => res.json()).then(data => {
         let exchangeRate = data.conversion_rates[second_Currency]; // getting user selected TO currency rate
