@@ -8,7 +8,7 @@ let swap = document.getElementById("swap");
 for (let i = 0; i < countries.length; i++) {
     for (let currencies in country_list) {
         let selected = i == 0 ? currencies == "INR" ? "selected" : "" : currencies == "USD" ? "selected" : "";
-        let optionTag = `<option value="${currencies}"${selected}>${currencies}</option>`;
+        let optionTag = `<option value="${currencies}"${selected}>${currencies}&nbsp;&nbsp;(${country_list[currencies]})</option>`;
         countries[i].insertAdjacentHTML("beforeend", optionTag);
     }
 }
@@ -21,7 +21,7 @@ function getExchangeRate() {
     let first_Currency = firstCurrency.value;
     let second_Currency = secondCurrency.value;
 
-    let url = `https://v6.exchangerate-api.com/v6/5f2be9a02902079eedf7215d/latest/${first_Currency}`;
+    let url = `https://v6.exchangerate-api.com/v6/d3feef4060f6a49448859dc0/latest/${first_Currency}`;
 
     fetch(url).then(res => res.json()).then(data => {
         let exchangeRate = data.conversion_rates[second_Currency]; // getting user selected TO currency rate
