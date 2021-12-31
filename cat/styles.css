@@ -9,7 +9,6 @@ body {
     width: 100vw;
     background-color: white;
     display: flex;
-    cursor: url(rsz_cursor.png), auto;
 }
 
 .text {
