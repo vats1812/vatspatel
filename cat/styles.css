@@ -71,7 +71,8 @@ body {
     bottom: 98px;
 }
 
-.leftEye, .rightEye {
+.leftEye,
+.rightEye {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -130,7 +131,8 @@ body {
     z-index: 1;
 }
 
-.mouth1, .mouth2 {
+.mouth1,
+.mouth2 {
     width: 15px;
     height: 15px;
     background-color: black;
